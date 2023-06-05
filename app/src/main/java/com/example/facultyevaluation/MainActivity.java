@@ -60,6 +60,14 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, studentDashboard.class);
                     startActivity(intent);
                 }
+                if(value == testItems[3]) {
+                    Intent intent = new Intent(MainActivity.this, teachersList.class);
+                    startActivity(intent);
+                }
+                if(value == testItems[4]) {
+                    Intent intent = new Intent(MainActivity.this, courseFeedbackQuestionnaire.class);
+                    startActivity(intent);
+                }
             }
         });
 

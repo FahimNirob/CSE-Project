@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+        
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/teachers_sample_Imageview_ID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/teacher_2"/>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teachers_name_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mark Setton"
+                android:textSize="18sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assistant Professor, CSE, Rajshahi University"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mark123@gmail.com"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

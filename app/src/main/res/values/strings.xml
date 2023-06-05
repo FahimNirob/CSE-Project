@@ -4,8 +4,8 @@
         <item> Sign Up </item>
         <item> Login </item>
         <item> Student Dashboard</item>
-        <item> A </item>
-        <item> A </item>
+        <item> Teachers List </item>
+        <item> Course Feedback Questionnaire </item>
         <item> A </item>
         <item> A </item>
         <item> A </item>
@@ -28,4 +28,14 @@
         <item> A </item>
         <item> A </item>
     </string-array>
+
+    <string-array name="teachers_name">
+        <item> Mark Setton </item>
+        <item> Mitchel Clerk </item>
+
+    </string-array>
+
+
+
+
 </resources>

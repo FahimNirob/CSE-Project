@@ -8,6 +8,8 @@
     android:orientation="vertical">
 
 
+    <!-- Card View Start -->
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,7 +30,9 @@
             android:textColor="#FFFFFF"
             android:padding="16dp"/>
 
+
         <LinearLayout
+            android:id="@+id/class_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -69,14 +73,79 @@
 
     </androidx.cardview.widget.CardView>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floating_action_button"
+    <!-- Card View End -->
+
+    <Button
+        android:id="@+id/join_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
-        android:layout_margin="15dp"
-        android:backgroundTint="#04C835"
-        app:srcCompat="@drawable/plus_1"/>
+        android:text="Join Class"
+        android:padding="10dp"
+        android:layout_marginStart="14dp"
+        android:onClick="showDialog"/>
+
+    <!-- Dialog Box Layout -->
+    <LinearLayout
+        android:id="@+id/code_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Code"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/code_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/black"
+            android:hint="Code"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Cancel"
+                android:textColor="@color/teal_700" />
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Join"
+                android:textColor="@color/teal_700" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
 
 
 </LinearLayout>
